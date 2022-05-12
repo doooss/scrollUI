@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background: blue;
+  transition: all 1s;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width : none;
+}
+.wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.page{
+  width: 100%;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+.fixed{
+    position:fixed;
+    bottom: 0;
+    left: 10;
+}
+.fixed2{
+    position:fixed;
+}
+
+.button_wrapper{
+    position:fixed;
+    top: 400px;
+}
